@@ -1,0 +1,44 @@
+<div>
+    <h1>Pipes in Angular</h1>
+
+    <div class="event">
+        <h3>Date Pipes</h3>
+        <p>Full Date : {{currentdate | date:'full'}}</p>
+        <p>short Date : {{currentdate | date: 'shortDate'}}</p>
+        <p>Medium Date : {{currentdate |  date: 'mediumDate'}}</p>
+        <p>Time : {{currentdate | date:'shortTime'}}</p>
+        <p>Time : {{currentdate | date: 'mediumTime'}}</p>
+        <p>Time : {{currentdate | date: 'hh:mm:p'}}</p>
+    </div>
+
+    <div class="event">
+        <h3>Number Pipes</h3>
+        <p class="field">
+            <a>No Formatting: </a> {{100 }}
+            <br> <a>2 Decimal Place: </a> {{100 | number:'3.2'}}
+  
+        </p>
+    </div>
+
+    <div class="event">
+        <h3>Currency Pipes</h3>
+        <p>No Formating : 100</p>
+        <p>USD Doller($): {{100 | currency:'USD' :'2.2-2'}}</p>
+        <p>USD Doller: {{100 | currency:'USD':'code' :'2.2-2'}}</p>
+        <p>INR() : {{100 | currency:'INR' :'2.2-2'}}</p>
+        <p>INR : {{100 | currency:'INR' :'code' :'2.2-2'}}</p>
+    </div>
+
+    <div class="event">
+        <h3>String Related Pipes</h3>
+        <p>Actual Message : {{Message}}</p>
+        <p>Lower Case : {{Message | lowercase}}</p>
+        <p>Upper Case : {{Message | uppercase}}</p>
+    </div>
+
+    <div class="event">
+        <h3>Percentage Pipes</h3>
+        <p>2 place Formatting : {{100 | percent:'3.2-5'}}</p>
+    </div>
+
+</div>
